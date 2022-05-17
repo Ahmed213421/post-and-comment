@@ -18,8 +18,7 @@ class Model
 
 	public function insert(){
 		if(isset($_GET['sub'])){
-			if(isset($_GET['title']) && isset($_GET['name'])){
-				if(!empty($_GET['title'] && !empty($_GET['name']))){
+			
 					$name = $_GET['name'];
 					$title = $_GET['title'];
 					$query = "INSERT INTO posts (name,title) VALUES ('$name','$title')";
@@ -35,8 +34,8 @@ class Model
 				else{
 					echo "<script>alert('empty')</script>";
 				}
-			}
-		}
+			
+		
 	}
 
 	public function fetch(){
@@ -65,8 +64,7 @@ class Model
 
 	public function addcomment(){
 		if(isset($_GET['sub'])){
-			if(isset($_GET['description']) && isset($_GET['name'])){
-				if(!empty($_GET['description'] && !empty($_GET['name']))){
+			
 					$name = $_GET['name'];
 					$description = $_GET['description'];
 					$post_id = $_GET['id'];
@@ -83,8 +81,8 @@ class Model
 				else{
 					echo "<script>alert('empty')</script>";
 				}
-			}
-		}
+			
+		
 	
 	}
 
