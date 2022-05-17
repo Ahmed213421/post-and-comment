@@ -72,10 +72,10 @@ class Model
 					
 					if ($sql = $this->conn->query($query)) {
 						echo "<script>alert('comment added successfully');</script>";
-						echo "<script>window.location.href = 'post.php';</script>";
+						echo "<script>window.location.href = 'post.php?id=$post_id'</script>";
 					}else{
 						echo "<script>alert('failed');</script>";
-						echo "<script>window.location.href = 'post.php';</script>";
+						echo "<script>window.location.href = 'post.php?id=$post_id'</script>";
 					}
 				}
 				else{
