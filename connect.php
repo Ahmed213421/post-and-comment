@@ -31,9 +31,7 @@ class Model
 						echo "<script>window.location.href = 'indexx.php';</script>";
 					}
 				}
-				else{
-					echo "<script>alert('empty')</script>";
-				}
+				
 			
 		
 	}
@@ -77,9 +75,6 @@ class Model
 						echo "<script>alert('failed');</script>";
 						echo "<script>window.location.href = 'post.php?id=$post_id'</script>";
 					}
-				}
-				else{
-					echo "<script>alert('empty')</script>";
 				}
 			
 		
